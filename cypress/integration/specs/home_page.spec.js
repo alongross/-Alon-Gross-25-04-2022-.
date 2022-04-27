@@ -3,23 +3,25 @@ describe("Testing automation herolo", () => {
   afterEach(() => {
     homepage.error();
   });
-  it("check if the web page is loding", () => {
+  it("Testing if the web page is loding", () => {
     homepage.open();
   });
-  it("check linkes", () => {
+  it("Testing the linkes", () => {
     homepage.broken_links();
   });
-  it("check drag", () => {
+  it("Testing the drag option", () => {
     homepage.dragdrop();
   });
-  it("click", () => {
+  it("Testing the dots", () => {
     homepage.slickdots();
   });
-  it("click", () => {
+  it("Testing if 'Want to hear more?' option is working", () => {
     homepage.help();
   });
-  it("click", () => {
+  it("Testing the validation name and company", () => {
     homepage.validation2();
+  });
+  it("Testing the validation of emails and phones", () => {
     homepage.validation(
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
       '[id$="email"]',
