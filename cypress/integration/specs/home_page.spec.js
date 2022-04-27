@@ -18,9 +18,6 @@ describe("Testing automation herolo", () => {
   it("Testing if 'Want to hear more?' option is working", () => {
     homepage.help();
   });
-  it("Testing the validation name and company", () => {
-    homepage.validation2();
-  });
   it("Testing the validation of emails and phones", () => {
     homepage.validation(
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
@@ -32,5 +29,8 @@ describe("Testing automation herolo", () => {
       '[id$="phone"]',
       "מספר טלפון לא חוקי"
     );
+  });
+  it("Testing the validation name and company", () => {
+    homepage.validation2();
   });
 });
